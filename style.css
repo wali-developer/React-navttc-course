@@ -1,0 +1,8 @@
+body {
+  padding: 50px;
+}
+
+td,
+th {
+  border: 2px solid red;
+}

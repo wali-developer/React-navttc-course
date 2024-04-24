@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Layout</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      border: 2px solid lightgray;
+      box-sizing: border-box;
+    }
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper {
+      height: 100vh;
+    }
+    .header {
+      height: 10%;
+      border: 2px solid red;
+    }
+    .sidebar {
+      width: 15%;
+      height: 78vh;
+      border: 2px solid red;
+    }
+    .main {
+      flex: 1;
+    }
+  </style>
+  <body>
+    <section class="wrapper">
+      <header class="header flex">
+        <h3>Header</h3>
+      </header>
+      <div style="display: flex">
+        <aside class="sidebar flex">
+          <h3>Aside</h3>
+        </aside>
+        <main class="main flex">
+          <h3>Main</h3>
+        </main>
+        <aside class="sidebar flex">
+          <h3>Aside</h3>
+        </aside>
+      </div>
+      <footer class="header flex">
+        <h3>Footer</h3>
+      </footer>
+    </section>
+  </body>
+</html>
