@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Third Class</title>
+  </head>
+  <body style="margin-top: 100px">
+    <section style="width: 50%; margin: auto">
+      <h1>HTML Quotations</h1>
+      <blockquote>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </blockquote>
+    </section>
+    <section
+      style="
+        margin-top: 100px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+      "
+    >
+      <iframe src="/class1.html" width="800px" height="500px"></iframe>
+    </section>
+
+    <section style="width: 800px; margin: auto">
+      <div style="margin: 100px">
+        <h1>HTML Forms</h1>
+        <form>
+          <div style="margin-bottom: 15px">
+            <label for="#name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="#email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="#password">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your email"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="#type">User type</label>
+            <select id="type">
+              <option value="admin">Admin</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="#type">Remember</label>
+            <input type="checkbox" name="remember" id="remember" />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label for="#radio">Radio button</label>
+            <input type="radio" name="radio" id="radio" />
+            <input type="radio" name="radio" id="radio" />
+          </div>
+          <!-- <button type="submit">Submit</button> -->
+          <div style="margin-bottom: 15px">
+            <label for="#address">Address</label>
+            <textarea name="" id="" rows="5"></textarea>
+          </div>
+          <div style="margin-bottom: 15px">
+            <label>Date</label>
+            <input type="datetime-local" name="date" />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label>File</label>
+            <input type="file" name="file" />
+          </div>
+          <div style="margin-bottom: 15px">
+            <label>Range</label>
+            <input type="range" name="range" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section style="padding: 50px">
+      <h1>HTML Video</h1>
+      <video width="820" height="540" controls>
+        <source src="assets/vid.mp4" type="video/mp4" />
+      </video>
+    </section>
+  </body>
+</html>
