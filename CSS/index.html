@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .heading {
+        color: dodgerblue;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .container {
+        border: 2px solid red;
+        padding: 50px;
+        margin: auto;
+        height: 50%;
+        background-color: yellow;
+        max-width: 500px;
+        min-width: 300px;
+        position: relative;
+      }
+      .link {
+        color: black;
+        text-decoration: none;
+      }
+      .link:hover {
+        color: blue;
+        text-decoration: underline;
+      }
+      .link:active {
+        color: green;
+        text-decoration: none;
+      }
+      .div1,
+      .div2 {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        position: absolute;
+        bottom: 10px;
+        border: 5px solid yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="height: 800px">
+      <h1 class="heading">Welcome to CSS</h1>
+      <div class="container">
+        <span style="text-align: center; font-size: 40px; display: block"
+          >Javascript</span
+        >
+        <a
+          href="https://www.w3schools.com/css/css_list.asp"
+          target="_blank"
+          class="link"
+          >Go to w3school</a
+        >
+        <div
+          class="div1"
+          style="left: 50px; background-color: red; z-index: 1"
+        ></div>
+        <div
+          class="div2"
+          style="left: 150px; background-color: rgb(0, 0, 0); z-index: 0"
+        ></div>
+      </div>
+    </section>
+  </body>
+</html>
