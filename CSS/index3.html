@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+  </head>
+  <style>
+    @keyframes example {
+      0% {
+        transform: rotate(0);
+        background-color: red;
+      }
+      25% {
+        transform: rotate(180deg);
+        background-color: yellow;
+      }
+      50% {
+        transform: rotate(240deg);
+        background-color: rgb(60, 238, 149);
+      }
+      100% {
+        transform: rotate(360deg);
+        background-color: rgb(85, 42, 196);
+      }
+    }
+    .wrapper {
+      max-width: 1200px;
+      height: 500px;
+      border: 2px solid red;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .transform {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      transition: all 300ms ease-in-out;
+      animation-name: example;
+      animation-duration: 3s;
+    }
+    .transform:hover {
+      transform: rotateZ(90deg);
+    }
+    .flexWrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .item {
+      width: 10%;
+      height: 90px;
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
+    <section class="wrapper">
+      <div class="transform"></div>
+      <div class="flexWrapper">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </section>
+  </body>
+</html>
