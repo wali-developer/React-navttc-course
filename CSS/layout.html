@@ -1,50 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid Layout</title>
+    <style>
+      .grid-container {
+        display: grid;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        gap: 10px;
+      }
+      .grid-container > div {
+        padding: 10px;
+        background-color: rgb(124, 124, 249);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+      }
+      .item1 {
+        grid-column: 1 / span 6;
+        height: 100px;
+      }
+      .item2 {
+        grid-column: 1 / span 1;
+        height: 400px;
+      }
+      .item3 {
+        grid-column: 2 / span 4;
+        height: 400px;
+      }
+      .item4 {
+        grid-column: 6 / span 1;
+        height: 400px;
+      }
+      .item5 {
+        grid-column: 1 / span 6;
+        height: 100px;
+      }
+    </style>
   </head>
-
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      width: 100%;
-      display: grid;
-      /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
-      grid-template-rows: 100px 800px 100px; */
-      grid-template-areas:
-        "header header header header header header"
-        "aside main main main main aside2"
-        "footer footer footer footer footer footer";
-      gap: 10px;
-    }
-    .item {
-      border: 2px solid tomato;
-      background-color: aliceblue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    /* header {
-      grid-column: 1 / span 12;
-    }
-    footer {
-      grid-column: 1 / span 12;
-    }
-    .aside1 {
-      grid-area: 2 / 1 / 5 / 3;
-    } */
-  </style>
   <body>
-    <header class="header" style="grid-area: header">Header</header>
-    <section class="">
-      <aside class="item" style="grid-area: aside">Aside</aside>
-      <main class="item" style="grid-area: main">Main</main>
-      <aside class="item" style="grid-area: aside2">Aside</aside>
-    </section>
-    <footer class="item" style="grid-area: footer">Footer</footer>
+    <h1>Grid Layout</h1>
+
+    <div class="grid-container">
+      <div class="item1">Header</div>
+      <div class="item2">Aside</div>
+      <div class="item3">Main</div>
+      <div class="item4">Aside</div>
+      <div class="item5">Footer</div>
+    </div>
   </body>
 </html>
