@@ -1,11 +1,15 @@
 {
-  "name": "tailwind",
+  "name": "tailwind-css-practice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Wali",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }
