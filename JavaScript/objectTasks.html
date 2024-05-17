@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Tasks</title>
+  </head>
+  <body>
+    <script>
+      function person(name, age, address, profession) {
+        return {
+          name,
+          age,
+          address,
+          profession,
+        };
+      }
+      const p = person("Ali", 20, "Peshawar", "Software Engineer");
+
+      function Company(name, employees, size, address) {
+        this.name = name;
+        this.employees = employees;
+        this.size = size;
+        this.address = address;
+      }
+
+      const e = new Company("Google", 50, 100, "America");
+
+      //   Character occurence cocunt in a string
+      function countOccurence(string, char) {
+        let count = 0;
+        for (val of string) {
+          if (val === char) {
+            count++;
+          }
+        }
+        return count;
+      }
+      const string = "Welcome to JavaScript Programming";
+      const count = countOccurence(string, "z");
+    </script>
+  </body>
+</html>

@@ -62,12 +62,16 @@ const circle = {
   },
 
   set changeSize(val) {
+    if (typeof val !== "number") {
+      throw new Error("Please enter a valid value");
+    }
     this.area = val;
   },
 };
 
-// Hoisting Problem
+console.log((circle.changeSize = "100"));
 
+// Hoisting Problem
 s();
 
 const s = function sum() {

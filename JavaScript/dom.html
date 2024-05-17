@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document object modal</title>
+  </head>
+  <body>
+    <div id="test" class="test"></div>
+    <script>
+      // createElement, createTextNode and createComment
+      var e = document.createElement("h2");
+      //   var f = document.createTextNode("Welcome to DOM in javascript");
+      //   var g = document.createComment("this is comment");
+
+      e.appendChild(f);
+      document.getElementById("test").appendChild(e);
+
+      const h2 = "<h2>JavaScript DOM Manipulation</h2>";
+      e.insertAdjacentElement("beforeend", h2);
+    </script>
+  </body>
+</html>

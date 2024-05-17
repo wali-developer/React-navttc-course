@@ -25,9 +25,42 @@ for (value of arr) {
   //   console.log(value);
 }
 
-const countOccurence = (string, char) => {
-  return;
+// Funtion to print stars
+function showStars(num) {
+  for (let row = 0; row < num; row++) {
+    let str = "";
+    for (let col = 0; col < num - row; col++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+}
+
+showStars(5);
+
+// Prime number checker
+const isPrime = (num) => {
+  if (num < 2) {
+    return error + ": " + num;
+  }
+
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return true;
 };
 
-const str = "Welcome to Javascript, aw ws ba pata lage makhke ta";
-countOccurence(str, "a");
+const showPrimeNumbersLimit = (limit) => {
+  let prime = [];
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime(i) === true) {
+      prime.push(i);
+    }
+  }
+  return prime;
+};
+
+const limit = showPrimeNumbersLimit(20);
+// console.log(limit);
