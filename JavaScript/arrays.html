@@ -7,9 +7,46 @@
   </head>
   <body>
     <script>
+      // Map
       const numbers = [50, 12, 33, 42, 11, 5, 89, 23];
-      const arr = numbers.sort((a, b) => b - a);
-      console.log(arr);
+
+      const products = [
+        {
+          name: "Shoes",
+          category: "Shoes",
+          price: 440,
+        },
+        {
+          name: "Cloths",
+          category: "Cloths",
+          price: 330,
+        },
+        {
+          name: "Mobile",
+          category: "Mobile",
+          price: 1200,
+        },
+        {
+          name: "Tablet",
+          category: "Tablet",
+          price: 976,
+        },
+        {
+          name: "Laptops",
+          category: "Laptops",
+          price: 3288,
+        },
+      ];
+
+      let sum = numbers.reduce((accomulator, number) => accomulator + number);
+
+      const totalPrice = products.reduce(
+        (accumulator, product) => (accumulator += product.price),
+        2000
+      );
+
+      const someArray = numbers.every((item) => item > 20);
+      console.log(someArray);
     </script>
   </body>
 </html>

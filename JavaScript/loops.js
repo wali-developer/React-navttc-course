@@ -26,15 +26,25 @@ for (value of arr) {
 }
 
 // Funtion to print stars
-function showStars(num) {
-  for (let row = 0; row < num; row++) {
+// function showStars(num) {
+//   for (let row = 0; row < num; row++) {
+//     let str = "";
+//     for (let col = 0; col < num - row; col++) {
+//       str += "*";
+//     }
+//     console.log(str);
+//   }
+// }
+
+const showStars = (n) => {
+  for (let row = 0; row < n; row++) {
     let str = "";
-    for (let col = 0; col < num - row; col++) {
+    for (let col = 0; col < n - row; col++) {
       str += "*";
     }
     console.log(str);
   }
-}
+};
 
 showStars(5);
 
