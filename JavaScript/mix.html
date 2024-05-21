@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <script>
+      // Spread Operator
+      const sum = (a, b, c, d, e) => {
+        console.log(a, b);
+      };
+      const arr = [1, 2, 3, 4, 5];
+      //   sum(...arr);
+
+      const arr2 = [6, 7, 8, 9];
+      const arr3 = [...arr, ...arr2];
+      //   console.log(arr3);
+
+      //   Rest Operator
+      const test = (...rest) => {
+        const res = rest.reduce((a, ele) => a + ele);
+        console.log(res);
+      };
+      //   test(5, 4, 3, 2, 8, 100, 1101, 847, 21);
+
+      //   Destructuring
+      const user = {
+        name: "Ali",
+        age: 22,
+        address: {
+          city: "Karachi",
+          country: "Pakistan",
+        },
+      };
+      const { name, age } = user;
+      //   console.log(name);
+
+      const n = [23, 22, 55, 77, 55];
+      const [a, b, , c] = n;
+      console.log(a, b, c);
+
+      //   Ternary operator
+      const t = (a, b) => {
+        return a > b ? a : b;
+      };
+      console.log(t(12, 10));
+    </script>
+  </body>
+</html>
